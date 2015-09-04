@@ -1,16 +1,15 @@
-var marked = require('marked');
-// https://github.com/markdown-it/markdown-it
+var markdownIt = require('markdown-it');
 var highlight = require('highlight.js');
 
 
 function parse(md, options) {
 	options = options || {};
 
-	options.highlight = function (code) {
-		return highlight.highlightAuto(code).value;
+	options.highlight = function (code, lang) {
+		return highlight.highlight(lang, code).value;
 	};
 
-	return marked(md, options);
+	return markdownIt(options).render(md);
 }
 
 

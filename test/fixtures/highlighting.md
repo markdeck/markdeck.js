@@ -2,4 +2,4 @@
 alert('awesome');
 ```
 +++++
-<code class="lang-js">alert
+<code class="language-js">alert
