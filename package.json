@@ -17,7 +17,10 @@
   },
   "homepage": "https://github.com/markdeck/markdeck.js",
   "dependencies": {
+    "domhandler": "^2.3.0",
+    "domutils": "^1.5.1",
     "highlight.js": "^8.7.0",
+    "htmlparser2": "^3.9.1",
     "markdown-it": "^4.4.0"
   },
   "devDependencies": {
